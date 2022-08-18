@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setDisplay(this);
         setOrientation(this);
         setName(this);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowsManager.LayoutParams.FLAG_FULLSCREEN);
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowsManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         setWebView((WebView) this.findViewById(R.id.webView));
     }
