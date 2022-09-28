@@ -1,19 +1,31 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 28
     buildToolsVersion '28.0.2'
     defaultConfig {
-        applicationId "com.jumbo.vscode"
-        minSdkVersion 24
-        targetSdkVersion 31
-        versionCode 810
-        versionName "8.1.0"
+        applicationId "microsoft.com.pwa"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        release {
+            storeFile file('../keystore.jks')
+            keyAlias 'jumbo'
+            storePassword 'Parot786'
+            keyPassword 'Parot786'
+        }
+    }
+
     buildTypes {
         release {
+            debuggable false
             minifyEnabled false
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -27,5 +39,4 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
-    implementation 'com.termux.termux-app:terminal-view:0.117'
 }

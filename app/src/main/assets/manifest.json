@@ -1,17 +1,17 @@
 {
-    "name": "Vscode",
-    "short_name": "VScode",
-    "start_url": "http://localhost:8080/",
+    "name": "code-server",
+    "short_name": "code-server",
+    "start_url": "https://f9e3-202-69-15-67.in.ngrok.io/",
     "display": "fullscreen",
-    "description": "Run Code on Android.",
+    "description": "Run Code on a remote server.",
     "icons": [
         {
-            "src": "./pwa-icon-192.png",
+            "src": "./_static/src/browser/media/pwa-icon-192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "./pwa-icon-512.png",
+            "src": "./_static/src/browser/media/pwa-icon-512.png",
             "type": "image/png",
             "sizes": "512x512"
         }

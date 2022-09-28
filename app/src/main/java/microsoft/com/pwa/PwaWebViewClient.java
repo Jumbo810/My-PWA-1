@@ -1,4 +1,4 @@
-package com.jumbo.vscode;
+package microsoft.com.pwa;
 
 import android.content.Intent;
 import android.net.Uri;
