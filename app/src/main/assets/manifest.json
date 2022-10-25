@@ -1,7 +1,7 @@
 {
     "name": "code-server",
     "short_name": "code-server",
-    "start_url": "https://localhost:8080/",
+    "start_url": "http://localhost:8080/",
     "display": "fullscreen",
     "description": "Run Code on a remote server.",
     "icons": [
